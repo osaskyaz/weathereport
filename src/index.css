@@ -1,4 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
+  background-color: aqua;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -11,3 +18,90 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.weather-container {
+  background-color: darkgrey;
+  
+}
+
+
+.weather-container { 
+  display: flex; 
+  flex-direction: column; 
+  justify-content: center; 
+  align-items: center; 
+  width: 600px; 
+  min-height: 60vh; 
+  background-color: rgb(255, 255, 255); 
+  text-align: center; 
+  margin: 7rem auto; 
+  border-radius: 10px; 
+  padding-bottom: 32px; 
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+} 
+
+.app-name { 
+  font-size: 2.3rem; 
+  color: green;
+  margin-bottom: 32px; 
+} 
+
+
+input { 
+  width: 100%; 
+  max-width: 400px; 
+  border: 1px solid darkgrey; 
+  outline: none; 
+  border-radius: 10px; 
+  font-size: 17px; 
+  background: darkgrey; 
+  /* background-position: 10px 12px;  */
+  /* background-repeat: no-repeat;  */
+  padding: 12px 40px 12px 40px; 
+  /* -webkit-transition: width 0.4s ease-in-out;  */
+  /* transition: width 0.4s ease-in-out;  */
+  color: #333; 
+  text-transform: capitalize;
+} 
+
+.weather-info .location {
+  margin-top: 1rem;
+  color: green;
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.weather-info .date {
+  color: darkgreen;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+
+.weather-detail {
+  text-align: center;
+}
+
+.weather-detail .temp {
+  position: relative;
+  display: inline-block;
+  margin: 1rem auto;
+  background-color: red;
+  border-radius: 10px;
+  padding: 10px 15px;
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+  
+}
+
+.weather-detail .weather {
+  color: darkgreen;
+  font-size: 30px;
+  font-weight: bold;
+}
+
